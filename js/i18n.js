@@ -1,4 +1,6 @@
-let _lang = localStorage.getItem('numerology-lang') || 'en';
+const ALLOWED_LANGS = ['en', 'ro'];
+let _lang = ALLOWED_LANGS.includes(localStorage.getItem('numerology-lang'))
+  ? localStorage.getItem('numerology-lang') : 'en';
 let _strings = {};
 
 /**
@@ -6,6 +8,7 @@ let _strings = {};
  * @param {string} lang - 'en' or 'ro'
  */
 export async function setLanguage(lang) {
+  if (!ALLOWED_LANGS.includes(lang)) lang = 'en';
   _lang = lang;
   localStorage.setItem('numerology-lang', lang);
   try {

@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'numerology-v2';
+const CACHE_VERSION = 'numerology-v3';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -47,6 +47,8 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Only cache same-origin requests; let cross-origin (Google Fonts) go to network
+  if (new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(
     caches.match(event.request).then(cached => cached || fetch(event.request))
   );

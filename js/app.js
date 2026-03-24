@@ -14,8 +14,14 @@ async function init() {
     updateUIStrings();
   } catch (err) {
     console.error('App init failed:', err);
-    document.body.innerHTML = `<div style="padding:2rem;color:#b91c1c">
-      <h2>Failed to initialize</h2><p>${err.message}</p></div>`;
+    const div = document.createElement('div');
+    div.style.cssText = 'padding:2rem;color:#b91c1c';
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Failed to initialize';
+    const p = document.createElement('p');
+    p.textContent = err.message;
+    div.append(h2, p);
+    document.body.replaceChildren(div);
   }
 }
 
