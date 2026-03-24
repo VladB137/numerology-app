@@ -2,7 +2,8 @@
  * Module Registry — loads modules from modules.json and provides access.
  */
 
-const MODULE_BASE = './js/modules/';
+// Use import.meta.url so paths resolve correctly for both fetch() and import()
+const MODULE_BASE = new URL('./modules/', import.meta.url).href;
 let _modules = [];
 
 export class CalculationError extends Error {

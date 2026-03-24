@@ -5,11 +5,18 @@ import { initI18n, setLanguage, getLanguage, t } from './i18n.js';
 import { normalizeName } from '../data/letter-values.js';
 
 async function init() {
-  await initI18n();
-  await loadModules();
-  setupForm();
-  setupLanguageToggle();
-  updateUIStrings();
+  try {
+    await initI18n();
+    const modules = await loadModules();
+    console.log(`Loaded ${modules.length} modules`);
+    setupForm();
+    setupLanguageToggle();
+    updateUIStrings();
+  } catch (err) {
+    console.error('App init failed:', err);
+    document.body.innerHTML = `<div style="padding:2rem;color:#b91c1c">
+      <h2>Failed to initialize</h2><p>${err.message}</p></div>`;
+  }
 }
 
 function setupForm() {
