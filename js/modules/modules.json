@@ -1,0 +1,30 @@
+{
+  "modules": [
+    "core/life-path.js",
+    "core/expression.js",
+    "core/soul-urge.js",
+    "core/personality.js",
+    "core/birthday.js",
+    "core/maturity.js",
+    "secondary/balance.js",
+    "secondary/karmic-lessons.js",
+    "secondary/karmic-debt.js",
+    "secondary/hidden-passion.js",
+    "secondary/subconscious-self.js",
+    "name/cornerstone.js",
+    "name/capstone.js",
+    "name/first-vowel.js",
+    "name/planes-of-expression.js",
+    "name/inclusion-chart.js",
+    "timing/personal-year.js",
+    "timing/personal-month.js",
+    "timing/pinnacles.js",
+    "timing/challenges.js",
+    "timing/transits.js",
+    "timing/essence.js",
+    "special/bridge-numbers.js",
+    "special/rational-thought.js",
+    "special/chaldean-compound.js",
+    "special/master-numbers.js"
+  ]
+}

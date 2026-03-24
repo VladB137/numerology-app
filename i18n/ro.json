@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "Numerologie",
+    "subtitle": "Lectură completă",
+    "language": "Limbă",
+    "updateAvailable": "Versiune nouă disponibilă. Reîncărcați?"
+  },
+  "input": {
+    "fullName": "Nume complet (cel de la naștere)",
+    "birthdate": "Data nașterii",
+    "timeOfBirth": "Ora nașterii",
+    "locationOfBirth": "Locul nașterii",
+    "optional": "opțional",
+    "system": "Sistem",
+    "pythagorean": "Pitagoreean",
+    "chaldean": "Caldean",
+    "both": "Ambele",
+    "generate": "Generează lectura",
+    "nameHint": "Folosiți numele complet de la naștere",
+    "validation": {
+      "nameRequired": "Vă rugăm introduceți numele complet",
+      "nameInvalid": "Numele poate conține doar litere, spații, cratime și apostrofuri",
+      "birthdateRequired": "Vă rugăm introduceți data nașterii",
+      "birthdateFuture": "Data nașterii nu poate fi în viitor"
+    }
+  },
+  "results": {
+    "back": "Înapoi",
+    "born": "Născut(ă)",
+    "whatIsThis": "Ce este acesta?",
+    "howCalculated": "Cum se calculează?",
+    "source": "Sursă",
+    "notAvailable": "Indisponibil — datele necesare nu au fost furnizate",
+    "categories": {
+      "core": "Numere de bază",
+      "secondary": "Numere secundare",
+      "name": "Analiza numelui",
+      "timing": "Cicluri temporale",
+      "special": "Speciale"
+    }
+  },
+  "about": {
+    "title": "Despre",
+    "systems": "Sisteme de numerologie",
+    "sources": "Cărți sursă"
+  }
+}

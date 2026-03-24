@@ -1,0 +1,47 @@
+{
+  "app": {
+    "title": "Numerology",
+    "subtitle": "Complete Reading",
+    "language": "Language",
+    "updateAvailable": "New version available. Refresh?"
+  },
+  "input": {
+    "fullName": "Full Name (as given at birth)",
+    "birthdate": "Date of Birth",
+    "timeOfBirth": "Time of Birth",
+    "locationOfBirth": "Location of Birth",
+    "optional": "optional",
+    "system": "System",
+    "pythagorean": "Pythagorean",
+    "chaldean": "Chaldean",
+    "both": "Both",
+    "generate": "Generate Reading",
+    "nameHint": "Use your full birth name as given at birth",
+    "validation": {
+      "nameRequired": "Please enter your full name",
+      "nameInvalid": "Name can only contain letters, spaces, hyphens, and apostrophes",
+      "birthdateRequired": "Please enter your date of birth",
+      "birthdateFuture": "Date of birth cannot be in the future"
+    }
+  },
+  "results": {
+    "back": "Back",
+    "born": "Born",
+    "whatIsThis": "What is this?",
+    "howCalculated": "How is this calculated?",
+    "source": "Source",
+    "notAvailable": "Not available — required input was not provided",
+    "categories": {
+      "core": "Core Numbers",
+      "secondary": "Secondary Numbers",
+      "name": "Name Analysis",
+      "timing": "Timing & Cycles",
+      "special": "Special"
+    }
+  },
+  "about": {
+    "title": "About",
+    "systems": "Numerology Systems",
+    "sources": "Source Books"
+  }
+}
